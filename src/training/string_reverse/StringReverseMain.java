@@ -1,7 +1,6 @@
 package training.string_reverse;
 
 import java.util.Scanner;
-
 /**
  * Created by Ivan_Stepantsov on 7/16/2017.
  */
@@ -11,9 +10,10 @@ public class StringReverseMain {
         System.out.println("Please enter your string to reverse:");
         Scanner stringToReverse = new Scanner(System.in);
         inputString = stringToReverse.nextLine();
-        char [] singleCharacter = inputString.toCharArray(); //basic difference between post and prefix [] - ?
+        char[] singleCharacter = inputString.toCharArray();
 
-        for (int i = )
-
+        for (int i = singleCharacter.length - 1; i >= 0; i--) {
+            System.out.print(singleCharacter[i]);
+        }
     }
 }
