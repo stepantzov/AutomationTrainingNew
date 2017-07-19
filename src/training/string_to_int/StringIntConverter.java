@@ -25,7 +25,6 @@ public class StringIntConverter {
                 int enteredInt = enteredIntScanner.nextInt();
                 String stringCapture = String.valueOf(enteredInt);
                 System.out.println(stringCapture);
-
             }
         }
 
