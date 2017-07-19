@@ -6,6 +6,12 @@ import java.util.Scanner;
  * Created by Ivan_Stepantsov on 7/8/2017.
  */
 public class CalculatorMain {
+    static int getSelectedValue(String value) {
+        Scanner valuesScanner = new Scanner(System.in);
+        System.out.format("Please enter %s value: ", value);
+        return valuesScanner.nextInt();
+    }
+
     public static void main(String[] args) {
         System.out.println("Welcome to the text Calculator.\nPlease select the number which " +
                 "is correspond to the operation needed:\n" +
@@ -23,7 +29,7 @@ public class CalculatorMain {
             NumberCheck myNumberToCheck = new NumberCheck();
             myNumberToCheck.numberCheckOutput(numberToCheckValue);
         } else {
-            new CalculatorOperationSelect(operationTypeSelect);
+            new BasicCalculatorOperations(operationTypeSelect);
         }
     }
 }
