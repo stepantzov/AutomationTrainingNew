@@ -24,12 +24,10 @@ class NumberCheck {
     }
 
     boolean numberEven(int number) {
-        boolean oddFlag = false;
+        boolean oddFlag = true;
         if (number % 2 == 0) {
-            return oddFlag;
-        } else {
-            oddFlag = true;
-            return oddFlag;
+            oddFlag = false;
         }
+        return oddFlag;
     }
 }
