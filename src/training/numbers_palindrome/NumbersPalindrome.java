@@ -12,7 +12,6 @@ class NumbersPalindrome {
         System.out.println("Please enter your number to check if palindrome: ");
         Scanner numberToCheckScan = new Scanner(System.in);
         int numberToCheck = numberToCheckScan.nextInt();
-
         NumbersPalindromeLogic checkNumbersPalindromeLogic = new NumbersPalindromeLogic();
 
         palindromeFlag = checkNumbersPalindromeLogic.numbersPalindromeLogic(numberToCheck);
