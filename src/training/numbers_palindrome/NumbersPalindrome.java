@@ -19,6 +19,4 @@ class NumbersPalindrome {
             System.out.println("Your number is palindrome.");
         } else System.out.println("Your number is not a palindrome.");
     }
-
-
 }
