@@ -5,10 +5,29 @@ package training.calculator;
  */
 class NumberCheck {
     void numberCheckOutput(int numberToCheck) {
-        NumberCheckLogic myNumberCheckLogic = new NumberCheckLogic();
-        myNumberCheckLogic.numberPrimeCheck(numberToCheck);
+        System.out.println("prime = " + numberPrime(numberToCheck));
+        System.out.println("odd number = " + numberEven(numberToCheck));
+    }
 
-        System.out.println("prime = " + myNumberCheckLogic.numberPrimeCheck(numberToCheck));
-        System.out.println("odd number = " + myNumberCheckLogic.numberEvenCheck(numberToCheck));
+    boolean numberPrime(int number) {
+        boolean primeFlag = false;
+
+        if (number > 0) {
+            for (int i = 2; i < number; i++) {
+                if (number % i == 0) {
+                    return primeFlag;
+                }
+            }
+            primeFlag = true;
+        }
+        return primeFlag;
+    }
+
+    boolean numberEven(int number) {
+        boolean oddFlag = true;
+        if (number % 2 == 0) {
+            oddFlag = false;
+        }
+        return oddFlag;
     }
 }
