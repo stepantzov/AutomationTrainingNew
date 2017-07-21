@@ -4,8 +4,7 @@ package training.array_selection_sort;
  * Created by Ivan_Stepantsov on 7/20/2017.
  */
 class ArraySelectionSort {
-    public static int [] doArraySelectionSort(int[] array) {
-
+    static int[] doArraySelectionSort(int[] array) {
 
         for (int i = 0; i < array.length - 1; i++) {
             int index = i;
@@ -16,16 +15,15 @@ class ArraySelectionSort {
             int smallNumber = array[index];
             array[index] = array[i];
             array[i] = smallNumber;
-                    }
-                    return array;
+        }
+        return array;
     }
 
-    public static void main(String[] args) {
-        int [] myArray = {4, 5, 3, 6, 7, 4, 3, 2, 6, 7, 6, 3, -3, -4, -6, 3};
-        int [] sortedArray = doArraySelectionSort(myArray);
+    static int returnMinElement(int[] array) {
+        return array[0];
+    }
 
-        for (int i: sortedArray){
-            System.out.format("%d, ",i);
-        }
+    static int returnMaxElement(int[] array) {
+        return array[array.length - 1];
     }
 }
