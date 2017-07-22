@@ -10,7 +10,6 @@ class NumbersPalindromeLogic {
         int reverse = 0;
         n = number;
 
-        boolean flag = false;
         do {
             digit = number % 10;
             reverse = (reverse * 10) + digit;
@@ -18,10 +17,7 @@ class NumbersPalindromeLogic {
         }
         while (number != 0);
 
-        if (n == reverse) {
-            flag = true;
-            return flag;
-        }
-        return flag;
+        return (n == reverse);
+
     }
 }
