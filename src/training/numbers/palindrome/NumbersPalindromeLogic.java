@@ -18,6 +18,5 @@ class NumbersPalindromeLogic {
         while (number != 0);
 
         return (n == reverse);
-
     }
 }
