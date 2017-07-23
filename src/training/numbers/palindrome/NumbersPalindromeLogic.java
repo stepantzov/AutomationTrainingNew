@@ -16,7 +16,6 @@ class NumbersPalindromeLogic {
             number = number / 10;
         }
         while (number != 0);
-
         return (n == reverse);
     }
 }
