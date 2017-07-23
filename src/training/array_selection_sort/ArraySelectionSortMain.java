@@ -15,4 +15,3 @@ public class ArraySelectionSortMain {
         System.out.println("Max element = " + ArraySelectionSort.returnMaxElement(myArray));
     }
 }
-
