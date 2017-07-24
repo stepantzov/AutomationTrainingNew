@@ -1,4 +1,4 @@
-package training.string_convert;
+package training.string;
 
 import java.util.Scanner;
 
