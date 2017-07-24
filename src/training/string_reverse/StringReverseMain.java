@@ -1,19 +1,25 @@
 package training.string_reverse;
 
 import java.util.Scanner;
+
 /**
  * Created by Ivan_Stepantsov on 7/16/2017.
  */
 public class StringReverseMain {
-    public static void main(String[] args) {
+    static String getInputString() {
         String inputString;
         System.out.println("Please enter your string to reverse:");
         Scanner stringToReverse = new Scanner(System.in);
         inputString = stringToReverse.nextLine();
-        char[] singleCharacter = inputString.toCharArray();
+        return inputString;
+    }
 
-        for (int i = singleCharacter.length - 1; i >= 0; i--) {
-            System.out.print(singleCharacter[i]);
+    public static void main(String[] args) {
+        char[] characterArray = StringReverseMain.getInputString().toCharArray();
+
+        for (int i = characterArray.length - 1; i >= 0; i--) {
+            String resultString = Character.toString(characterArray[i]);
+            System.out.print(resultString);
         }
     }
 }
