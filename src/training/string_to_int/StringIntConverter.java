@@ -6,12 +6,15 @@ import java.util.Scanner;
  * Created by Ivan_Stepantsov on 7/17/2017.
  */
 public class StringIntConverter {
-    public static void main(String[] args) {
+    static int selectOperation() {
         System.out.println("Please select the operation required:\n " +
                 "1 Convert from String to Int\n 2 Convert from Int to String");
         Scanner myScanner = new Scanner(System.in);
-        int i = myScanner.nextInt();
-        switch (i) {
+        return myScanner.nextInt();
+    }
+
+    public static void main(String[] args) {
+        switch (StringIntConverter.selectOperation()) {
             case 1: {
                 System.out.println("Please enter String to convert to Int:");
                 Scanner enteredStringScanner = new Scanner(System.in);
