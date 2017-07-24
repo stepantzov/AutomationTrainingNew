@@ -3,7 +3,7 @@ package training.arraysort;
 /**
  * Created by Ivan_Stepantsov on 7/21/2017.
  */
-public class ArraySelectionSortMain {
+class ArraySelectionSortMain {
     static void doSort(int[] array) {
         int[] sortedArray = ArraySelectionSort.doArraySelectionSort(array);
         for (int i : sortedArray) {
