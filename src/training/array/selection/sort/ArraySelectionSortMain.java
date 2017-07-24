@@ -1,4 +1,4 @@
-package training.array_selection_sort;
+package training.array.selection.sort;
 
 /**
  * Created by Ivan_Stepantsov on 7/21/2017.
