@@ -1,11 +1,11 @@
-package training.string_reverse;
+package training.string;
 
 import java.util.Scanner;
 
 /**
  * Created by Ivan_Stepantsov on 7/16/2017.
  */
-public class StringReverseMain {
+class StringReverse {
     static String getInputString() {
         String inputString;
         System.out.println("Please enter your string to reverse:");
@@ -14,12 +14,15 @@ public class StringReverseMain {
         return inputString;
     }
 
-    public static void main(String[] args) {
-        char[] characterArray = StringReverseMain.getInputString().toCharArray();
-
+    static void returnResultString() {
+        char[] characterArray = StringReverse.getInputString().toCharArray();
         for (int i = characterArray.length - 1; i >= 0; i--) {
             String resultString = Character.toString(characterArray[i]);
             System.out.print(resultString);
         }
+    }
+
+    public static void main(String[] args) {
+        StringReverse.returnResultString();
     }
 }
