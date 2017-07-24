@@ -18,6 +18,7 @@ public class StringIntConverter {
                 String enteredString = enteredStringScanner.nextLine();
                 int intCapture = Integer.parseInt(enteredString);
                 System.out.println(intCapture);
+                break;
             }
             case 2: {
                 System.out.println("Please enter Int to convert to String:");
@@ -25,6 +26,7 @@ public class StringIntConverter {
                 int enteredInt = enteredIntScanner.nextInt();
                 String stringCapture = String.valueOf(enteredInt);
                 System.out.println(stringCapture);
+                break;
             }
         }
     }
