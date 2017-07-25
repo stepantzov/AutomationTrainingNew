@@ -14,15 +14,16 @@ class StringReverse {
         return inputString;
     }
 
-    static void returnResultString() {
+    static String returnResultString() {
         char[] characterArray = StringReverse.getInputString().toCharArray();
+        String resultString = "";
         for (int i = characterArray.length - 1; i >= 0; i--) {
-            String resultString = Character.toString(characterArray[i]);
-            System.out.print(resultString);
+            resultString = (resultString + characterArray[i]);
         }
+        return resultString;
     }
 
     public static void main(String[] args) {
-        StringReverse.returnResultString();
+        System.out.println(StringReverse.returnResultString());
     }
 }
