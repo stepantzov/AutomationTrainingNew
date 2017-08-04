@@ -22,12 +22,12 @@ abstract class OrganismOrigin implements OrganismConcept {
 
     @Override
     public void reproduction() {
-        System.out.println("reproduction of organism");
+        System.out.println("Reproduction of organism.");
     }
 
     @Override
     public int deathAge(int deathAge) {
-        System.out.println("deathAge of organism=" + deathAge);
+        System.out.println("DeathAge of organism=" + deathAge);
         return deathAge;
     }
 

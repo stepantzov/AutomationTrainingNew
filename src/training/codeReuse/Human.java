@@ -9,12 +9,12 @@ class Human extends MammalAnimal {
     }
 
     public void movement() {
-        System.out.println("movement of Organism made mostly by walking using two feets only! amazing!");
+        System.out.println("Movement of Organism made mostly by walking using two feets only! amazing!");
     }
 
     //below is the example of abstract method define
     public void selfConscious() {
-        System.out.println("enable high levels of abstract reasoning, language, /n" +
-                "problem solving, sociality, and culture through social learning");
+        System.out.println("Self conscious is present. Enable high levels of abstract reasoning, language, " +
+                "problem solving, sociality, and culture through social learning.");
     }
 }

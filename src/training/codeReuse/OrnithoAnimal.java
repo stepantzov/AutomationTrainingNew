@@ -5,6 +5,6 @@ package training.codeReuse;
  */
 abstract class OrnithoAnimal extends OrganismOrigin {
     public void movement() {
-        System.out.println("movement of organism made mostly by flying");
+        System.out.println("Movement of organism made mostly by flying.");
     }
 }

@@ -9,11 +9,11 @@ class Swordfish extends AquaticAnimal {
     }
 
     public void nutrition(String nutrition) {
-        System.out.println("nutrition of organism made mostly by other smaller fish and " + nutrition);
+        System.out.format("Nutrition of organism made mostly by other smaller fish and %s.\n", nutrition);
     }
 
     @Override
     public void selfConscious() {
-        System.out.println("selfConscious is missing according to our sources");
+        System.out.println("SelfConscious is missing according to our sources.");
     }
 }

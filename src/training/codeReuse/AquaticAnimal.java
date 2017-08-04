@@ -5,6 +5,6 @@ package training.codeReuse;
  */
 abstract class AquaticAnimal extends OrganismOrigin {
     public void movement() {
-        System.out.println("movement of Organism made mostly by swimming");
+        System.out.println("Movement of Organism made mostly by swimming.");
     }
 }

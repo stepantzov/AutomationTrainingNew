@@ -5,6 +5,6 @@ package training.codeReuse;
  */
 abstract class MammalAnimal extends OrganismOrigin {
     public void nutrition(String nutrition) {
-        System.out.println("nutrition of Organism cand be made by milk and " + nutrition);
+        System.out.format("Nutrition of Organism cand be made by milk and %s.\n", nutrition);
     }
 }
