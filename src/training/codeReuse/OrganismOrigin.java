@@ -3,7 +3,7 @@ package training.codeReuse;
 /**
  * Created by Ivan_Stepantsov on 8/3/2017.
  */
-class OrganismOrigin implements OrganismConcept {
+abstract class OrganismOrigin implements OrganismConcept {
 
     @Override
     public void birth() {
@@ -32,11 +32,15 @@ class OrganismOrigin implements OrganismConcept {
     }
 
     @Override
-    public boolean alive(int age, int lifeLimitAge) {
-        boolean deathAgeFlag = false;
-        OrganismOrigin a = new OrganismOrigin();
+    public void alive(int age, int lifeLimitAge) {
+   /*   will try to add some implementation
+   boolean deathAgeFlag = false;
         if (age > lifeLimitAge) {
             return deathAgeFlag;
         } else return deathAgeFlag;
+  */
     }
+
+    public abstract void selfConscious();
+
 }

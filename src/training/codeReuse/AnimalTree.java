@@ -35,6 +35,7 @@ public class AnimalTree {
             organusmCheck.nutrition("apple");
             organusmCheck.alive(1, 5);
             organusmCheck.reproduction();
+            organusmCheck.selfConscious();//abstraction
         }
     }
 }

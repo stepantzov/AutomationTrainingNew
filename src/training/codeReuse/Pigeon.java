@@ -11,4 +11,9 @@ class Pigeon extends OrnithoAnimal {
     public void nutrition(String nutrition) {
         System.out.println("nutrition of Organism made mostly by insects and " + nutrition);
     }
+
+    @Override
+    public void selfConscious() {
+        System.out.println("selfConscious is missing according to our sources");
+    }
 }

@@ -11,4 +11,9 @@ class Dog extends MammalAnimal {
     public void movement() {
         System.out.println("movement of dog made mostly by Walk by using four feet");
     }
+
+    @Override
+    public void selfConscious() {
+        System.out.println("selfConscious is missing according to our sources");
+    }
 }

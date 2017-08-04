@@ -14,5 +14,5 @@ interface OrganismConcept {
 
     int deathAge(int deathAge);
 
-    boolean alive(int age, int lifeLimitAge);
+    void alive(int age, int lifeLimitAge);
 }
