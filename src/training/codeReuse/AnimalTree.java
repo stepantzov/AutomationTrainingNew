@@ -1,4 +1,4 @@
-package training.codeReuseOOP;
+package training.codeReuse;
 
 import java.util.Scanner;
 
@@ -24,7 +24,6 @@ public class AnimalTree {
                 break;
             case 4:
                 organusmCheck = new Human();
-
                 break;
             default:
                 System.out.println("Please select valid animal 1-4");

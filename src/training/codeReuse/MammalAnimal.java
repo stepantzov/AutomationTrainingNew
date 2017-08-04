@@ -1,4 +1,4 @@
-package training.codeReuseOOP;
+package training.codeReuse;
 
 /**
  * Created by Ivan_Stepantsov on 8/3/2017.
