@@ -1,4 +1,4 @@
-package training.codeReuse;
+package training.oop;
 
 import java.util.Scanner;
 
@@ -24,6 +24,9 @@ public class AnimalTree {
                 break;
             case 4:
                 organusmCheck = new Human();
+                Person.personDetails();
+                Person.personDetails("testName and", "testLastName");
+                Person.personDetails("testNameOnly");
                 break;
             default:
                 System.out.println("Please select valid animal 1-4");
@@ -33,8 +36,9 @@ public class AnimalTree {
             organusmCheck.birth();
             organusmCheck.movement();
             organusmCheck.nutrition("apple");
-            organusmCheck.alive(1, 5);
+            System.out.println("Is organism alive = " + organusmCheck.alive(1, 5));//used abstract method here
             organusmCheck.reproduction();
+            organusmCheck.deathAge(5);
             organusmCheck.selfConscious();//abstraction
         }
     }

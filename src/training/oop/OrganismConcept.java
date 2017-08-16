@@ -1,4 +1,4 @@
-package training.codeReuse;
+package training.oop;
 
 /**
  * Created by Ivan_Stepantsov on 8/3/2017.
@@ -14,5 +14,5 @@ interface OrganismConcept {
 
     int deathAge(int deathAge);
 
-    void alive(int age, int lifeLimitAge);
+    boolean alive(int age, int lifeLimitAge);
 }

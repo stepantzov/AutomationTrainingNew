@@ -1,10 +1,9 @@
-package training.codeReuse;
+package training.oop;
 
 /**
  * Created by Ivan_Stepantsov on 8/3/2017.
  */
 abstract class OrganismOrigin implements OrganismConcept {
-
     @Override
     public void birth() {
         System.out.println("Birth of organism.");
@@ -32,15 +31,13 @@ abstract class OrganismOrigin implements OrganismConcept {
     }
 
     @Override
-    public void alive(int age, int lifeLimitAge) {
-   /*   will try to add some implementation
-   boolean deathAgeFlag = false;
-        if (age > lifeLimitAge) {
+    public boolean alive(int age, int lifeLimitAge) {
+        boolean deathAgeFlag = false;
+        if (age < lifeLimitAge) {
+            deathAgeFlag = true;
             return deathAgeFlag;
         } else return deathAgeFlag;
-  */
     }
 
     public abstract void selfConscious();
-
 }
