@@ -4,6 +4,19 @@ package training.oop;
  * Created by Ivan_Stepantsov on 8/3/2017.
  */
 class Human extends MammalAnimal {
+    private int humanAge;
+
+    public int getHumanAge() {
+        return humanAge;
+    }
+
+    public void setHumanAge(int humanAge) {
+        if (humanAge < 0 || humanAge > 100) {
+            throw new RuntimeException("Invalid age.");
+        }
+        this.humanAge = humanAge;
+    }
+
     public void birth() {
         System.out.println("Birth of Human. ROOO!");
     }

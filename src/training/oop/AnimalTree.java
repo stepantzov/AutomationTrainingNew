@@ -23,11 +23,16 @@ public class AnimalTree {
                 organusmCheck = new Swordfish();
                 break;
             case 4:
+                Human myHuman = new Human();
                 organusmCheck = new Human();
                 Person.personDetails();
                 Person.personDetails("testName and", "testLastName");
                 Person.personDetails("testNameOnly");
+
+                myHuman.setHumanAge(99);//encapsulation included set and get used
+                System.out.format("Currently human age is set to %d\n\n",myHuman.getHumanAge());
                 break;
+
             default:
                 System.out.println("Please select valid animal 1-4");
                 break;

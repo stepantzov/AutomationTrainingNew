@@ -30,6 +30,7 @@ abstract class OrganismOrigin implements OrganismConcept {
         return deathAge;
     }
 
+
     @Override
     public boolean alive(int age, int lifeLimitAge) {
         boolean deathAgeFlag = false;
