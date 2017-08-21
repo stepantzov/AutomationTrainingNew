@@ -2,6 +2,7 @@ package training.oop;
 
 /**
  * Created by Ivan_Stepantsov on 8/16/2017.
+ * this class contains the example of how 
  */
 class Person extends Human {
     static void personDetails() {
