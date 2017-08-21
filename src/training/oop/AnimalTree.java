@@ -29,7 +29,7 @@ public class AnimalTree {
                 Person.personDetails("testName and", "testLastName");
                 Person.personDetails("testNameOnly");
 
-                myHuman.setHumanAge(99);//encapsulation included set and get used
+                myHuman.setHumanAge(99);//encapsulation included in setHumanAge method; set and get used
                 System.out.format("Currently human age is set to %d\n\n",myHuman.getHumanAge());
                 break;
 
