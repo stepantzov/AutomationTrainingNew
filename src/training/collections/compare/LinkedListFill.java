@@ -1,6 +1,5 @@
 package training.collections.compare;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 
 /**

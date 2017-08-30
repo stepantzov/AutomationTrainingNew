@@ -1,7 +1,6 @@
 package training.collections.compare;
 
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by Ivan_Stepantsov on 8/28/2017.
