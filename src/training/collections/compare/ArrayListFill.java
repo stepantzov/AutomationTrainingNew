@@ -5,12 +5,10 @@ import java.util.ArrayList;
 /**
  * Created by Ivan_Stepantsov on 8/28/2017.
  */
-public class ArrayListFill extends BasicCollectionsFill {
-    static ArrayList doArrayListFill(int elementsArray[]) {
-        int elementsSequence[] = elementsArray;
-        ArrayList myArrayList = new ArrayList();
-        for (Integer i : elementsSequence)
-            myArrayList.add(i);
+class ArrayListFill extends BasicCollectionsFill {
+    static ArrayList<Integer> doArrayListFill(int elementsArray[]) {
+        ArrayList<Integer> myArrayList = new ArrayList<>();
+        for (int i : elementsArray) myArrayList.add(i);
         return myArrayList;
     }
 

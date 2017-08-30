@@ -5,25 +5,34 @@ import java.util.*;
 /**
  * Created by Ivan_Stepantsov on 8/28/2017.
  */
-public abstract class BasicCollectionsFill {
-    static Collection doBasicCollectionCreation(int elementsArray []) {
-        int elementsSequence [] = elementsArray;
+abstract class BasicCollectionsFill {
+    static Collection doBasicCollectionCreation(int elementsArray[]) {
         Collection myCollection = new ArrayList();
-        for (Integer i : elementsSequence) myCollection.add(i);
+        for (int i : elementsArray) myCollection.add(i);
         return myCollection;
     }
 
     static void getMidElement(Collection myCollection) {
-        long startTime = System.nanoTime();
-        Object[] tempArray = myCollection.toArray();
-        if ((myCollection.size()) % 2 == 0) {
-            System.out.format("\nCollection mid elements are: %d, %d\n", tempArray[tempArray.length / 2],
-                    tempArray[(tempArray.length / 2) - 1]);
+        Object tempArray[] = myCollection.toArray();
+        if ((tempArray.length) % 2 == 0) {
+            Object midCollectionElement1 = tempArray[(tempArray.length) / 2];
+            Object midCollectionElement2 = tempArray[(tempArray.length) / 2 - 1];
+            long startTime = System.nanoTime();
+            Boolean elementCheck1 = myCollection.contains(midCollectionElement1);
+            Boolean elementCheck2 = myCollection.contains(midCollectionElement2);
+            long endTime = System.nanoTime();
+            long duration = (endTime - startTime);
+            System.out.println("\nCollection mid elements are: " + midCollectionElement1 + ", " +
+                    midCollectionElement2);
+            System.out.println("Collection operation time = " + duration);
         } else {
-            System.out.format("Collection mid element is: %d\n", tempArray[(tempArray.length / 2) - 1]);
+            Object midCollectionElement = tempArray[(tempArray.length) / 2 - 1];
+            long startTime = System.nanoTime();
+            Boolean elementCheck1 = myCollection.contains(midCollectionElement);
+            long endTime = System.nanoTime();
+            long duration = (endTime - startTime);
+            System.out.println("Collection mid element is: %d\n" + midCollectionElement);
+            System.out.println("Collection operation time = " + duration);
         }
-        long endTime = System.nanoTime();
-        long duration = (endTime - startTime);
-        System.out.println("Collection operation time = " + duration);
     }
 }
