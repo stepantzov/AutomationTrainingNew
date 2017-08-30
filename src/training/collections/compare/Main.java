@@ -1,5 +1,7 @@
 package training.collections.compare;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Scanner;
 
 /**
@@ -11,12 +13,13 @@ public class Main {
         Scanner elementsQuantityScanner = new Scanner(System.in);
         int elementsQuantity = elementsQuantityScanner.nextInt();
         int elementsArray[] = new int[elementsQuantity];
+        Collection <Integer> myTestCollection = new ArrayList<Integer>();
         for (int i = 0; i < elementsArray.length; i++) {
             elementsArray[i] = (int) Math.round((Math.random() * 100));
         }
-        System.out.println("Map structure: \n" + HashMapFill.doHashMapFill(elementsArray));
-        System.out.println("Collection structure: \n" + BasicCollectionFill.doBasicCollectionCreation(elementsArray));
-        MidElementFinding.getBasicCollectionsMidElement(BasicCollectionFill.doBasicCollectionCreation(elementsArray));
+        System.out.println("Map structure:\n" + HashMapFill.doHashMapFill(elementsArray));
+        System.out.println("Collection structure:\n" + CollectionFill.doBasicCollectionCreation(elementsArray));
+        MidElementFinding.getBasicCollectionsMidElement(CollectionFill.doBasicCollectionCreation(elementsArray));
         MidElementFinding.getArrayListMidElement(ArrayListFill.doArrayListFill(elementsArray));
         MidElementFinding.getLinkedListMidElement(LinkedListFill.doLinkedListFill(elementsArray));
         MidElementFinding.getHashMapMidElement(HashMapFill.doHashMapFill(elementsArray));

@@ -1,7 +1,5 @@
 package training.collections.compare;
 
-import org.omg.PortableInterceptor.INACTIVE;
-
 import java.util.ArrayList;
 
 /**
@@ -9,8 +7,7 @@ import java.util.ArrayList;
  */
 class ArrayListFill  {
     static ArrayList<Integer> doArrayListFill(int elementsArray[]) {
-        ArrayList<Integer> myArrayList = new ArrayList<Integer>();
-        for (int i : elementsArray) myArrayList.add(i);
+        ArrayList<Integer> myArrayList = new ArrayList<>(CollectionFill.doBasicCollectionCreation(elementsArray));
         return myArrayList;
     }
 }
