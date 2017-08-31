@@ -1,7 +1,5 @@
 package training.collections.compare;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Scanner;
 
 /**
