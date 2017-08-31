@@ -74,7 +74,6 @@ public class MidElementFinding {
     }
 
     static void getArrayListMidElement(ArrayList<Integer> myArrayList) {
-
         if ((myArrayList.size()) % 2 == 0) {
             long startTime = System.nanoTime();
             int arrayListMidElement1 = myArrayList.get(myArrayList.size() / 2);
