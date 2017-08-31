@@ -18,7 +18,7 @@ public class Main {
         System.out.println("Collection structure:\n" + CollectionFill.doBasicCollectionCreation(elementsArray));
         MidElementFinding.getBasicCollectionsMidElement(CollectionFill.doBasicCollectionCreation(elementsArray));
         MidElementFinding.getLinkedListMidElement(LinkedListFill.doLinkedListFill(elementsArray));
-        MidElementFinding.getLinkedListMidElement(LinkedListFill.doLinkedListFill(elementsArray));
+        MidElementFinding.getArrayListMidElement(ArrayListFill.doArrayListFill(elementsArray));
         MidElementFinding.getHashMapMidElement(HashMapFill.doHashMapFill(elementsArray));
     }
 }
