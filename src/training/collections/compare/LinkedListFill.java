@@ -10,6 +10,4 @@ class LinkedListFill {
         LinkedList newLinkedList = new LinkedList(CollectionFill.doBasicCollectionCreation(elementsArray));
         return newLinkedList;
     }
-
-
 }
