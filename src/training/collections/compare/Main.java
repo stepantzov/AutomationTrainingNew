@@ -13,7 +13,6 @@ public class Main {
         Scanner elementsQuantityScanner = new Scanner(System.in);
         int elementsQuantity = elementsQuantityScanner.nextInt();
         int elementsArray[] = new int[elementsQuantity];
-        Collection<Integer> myTestCollection = new ArrayList<Integer>();
         for (int i = 0; i < elementsArray.length; i++) {
             elementsArray[i] = (int) Math.round((Math.random() * 100));
         }
