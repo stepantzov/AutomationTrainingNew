@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Created by Ivan_Stepantsov on 8/28/2017.
  */
-public class Main extends BarChart01 {
+public class Main {
     public static void main(String[] args) {
 
         System.out.println("Please enter the number of elements to add into collection:");
