@@ -19,108 +19,108 @@ public class Main {
         System.out.println("Collection structure:\n" + CollectionFill.doBasicCollectionCreation(elementsArray));
         System.out.println();
 
-        long collectionsMidElementTime = CollectionFill.getMidElement(CollectionFill.doBasicCollectionCreation(elementsArray));
-        long linkedListMidElementTime = LinkedListFill.getMidElement(LinkedListFill.doLinkedListFill(elementsArray));
-        long arrayListMidElementTime = ArrayListFill.getMidElement(ArrayListFill.doArrayListFill(elementsArray));
-        long listMidElementTime = ListFill.getMidElement(ListFill.doListFill(elementsArray));
-        long hashMapMidElementTime = HashMapFill.getMidElement(HashMapFill.doHashMapFill(elementsArray));
-        long hashTableMidElementTime = HashTableFill.getHashTableMidElement(HashTableFill.doHashTableFill(elementsArray));
-        long setMidElementTime = SetFill.getSetMidElement(SetFill.doSetFill(elementsArray));
+        CollectionFill.getMidElement(CollectionFill.doBasicCollectionCreation(elementsArray));
+        LinkedListFill.getMidElement(LinkedListFill.doLinkedListFill(elementsArray));
+        ArrayListFill.getMidElement(ArrayListFill.doArrayListFill(elementsArray));
+        ListFill.getMidElement(ListFill.doListFill(elementsArray));
+        HashMapFill.getMidElement(HashMapFill.doHashMapFill(elementsArray));
+        HashTableFill.getHashTableMidElement(HashTableFill.doHashTableFill(elementsArray));
+        SetFill.getSetMidElement(SetFill.doSetFill(elementsArray));
         System.out.println();
 
-        long arrayListAddMultipleElementsTime = ArrayListFill.addMultipleElements(elementsArray);
-        long collectionAddMultipleElementsTime = CollectionFill.addMultipleElements(elementsArray);
-        long linkedLisAddMultipleElementsTime = LinkedListFill.addMultipleElements(elementsArray);
-        long listAddMultipleElementsTime = ListFill.addMultipleElements(elementsArray);
-        long setAddMultipleElementsTime = SetFill.addMultipleElements(elementsArray);
+        ArrayListFill.addMultipleElements(elementsArray);
+        CollectionFill.addMultipleElements(elementsArray);
+        LinkedListFill.addMultipleElements(elementsArray);
+        ListFill.addMultipleElements(elementsArray);
+        SetFill.addMultipleElements(elementsArray);
         System.out.println();
 
-        long arrayListAddSingleElementToPositionTime = ArrayListFill.addSingleElementToPosition(elementsArray);
-        long collectionAddSingleElementToPositionTime = CollectionFill.addSingleElement(elementsArray);
-        long linkedListAddSingleElementToPositionTime = LinkedListFill.addSingleElementToPosition(elementsArray);
-        long setAddSingleElementToPositionTime = SetFill.addSingleElement(elementsArray);
+        ArrayListFill.addSingleElementToPosition(elementsArray);
+        CollectionFill.addSingleElement(elementsArray);
+        LinkedListFill.addSingleElementToPosition(elementsArray);
+        SetFill.addSingleElement(elementsArray);
         System.out.println();
 
-        long arrayListContainsCheckTime = ArrayListFill.containsCheck(elementsArray);
-        long collectionContainsCheckTime = CollectionFill.containsCheck(elementsArray);
-        long hashMapContainsCheckTime = HashMapFill.containsCheck(HashMapFill.doHashMapFill(elementsArray));
-        long hashTableContainsCheckTime = HashTableFill.containsCheck(HashTableFill.doHashTableFill(elementsArray));
-        long linkedListContainsCheckTime = LinkedListFill.containsCheck(elementsArray);
-        long listContainsCheckTime = ListFill.containsCheck(elementsArray);
-        long SetContainsCheckTime = SetFill.containsCheck(elementsArray);
+        ArrayListFill.containsCheck(elementsArray);
+        CollectionFill.containsCheck(elementsArray);
+        HashMapFill.containsCheck(HashMapFill.doHashMapFill(elementsArray));
+        HashTableFill.containsCheck(HashTableFill.doHashTableFill(elementsArray));
+        LinkedListFill.containsCheck(elementsArray);
+        ListFill.containsCheck(elementsArray);
+        SetFill.containsCheck(elementsArray);
         System.out.println();
 
-        long arrayListClearTime = ArrayListFill.clear(elementsArray);
-        long collectionClearTime = CollectionFill.clear(elementsArray);
-        long hashMapClearTime = HashMapFill.clear(HashMapFill.doHashMapFill(elementsArray));
-        long hashTableClearTime = HashTableFill.clear(HashTableFill.doHashTableFill(elementsArray));
-        long linkedListClearTime = LinkedListFill.clear(elementsArray);
-        long listClearTime = ListFill.clear(elementsArray);
-        long setClearTime = SetFill.clear(elementsArray);
+        ArrayListFill.clear(elementsArray);
+        CollectionFill.clear(elementsArray);
+        HashMapFill.clear(HashMapFill.doHashMapFill(elementsArray));
+        HashTableFill.clear(HashTableFill.doHashTableFill(elementsArray));
+        LinkedListFill.clear(elementsArray);
+        ListFill.clear(elementsArray);
+        SetFill.clear(elementsArray);
         System.out.println();
 
-        long arrayListCloneTime = ArrayListFill.clone(elementsArray);
-        long hashMapCloneTime = HashMapFill.clone(HashMapFill.doHashMapFill(elementsArray));
-        long hashTableCloneTime = HashTableFill.clone(HashTableFill.doHashTableFill(elementsArray));
-        long linkedListCloneTime = LinkedListFill.clone(elementsArray);
+        ArrayListFill.clone(elementsArray);
+        HashMapFill.clone(HashMapFill.doHashMapFill(elementsArray));
+        HashTableFill.clone(HashTableFill.doHashTableFill(elementsArray));
+        LinkedListFill.clone(elementsArray);
         System.out.println();
 
-        long arrayListIndexOfCheckTime = ArrayListFill.indexOfCheck(elementsArray);
-        long linkedListIndexOfCheckTime = LinkedListFill.indexOfCheck(elementsArray);
-        long listIndexOfCheckTime = ListFill.indexOfCheck(elementsArray);
+        ArrayListFill.indexOfCheck(elementsArray);
+        LinkedListFill.indexOfCheck(elementsArray);
+        ListFill.indexOfCheck(elementsArray);
         System.out.println();
 
-        long arrayListLastIndexOfCheckTime = ArrayListFill.lastIndexOfCheck(elementsArray);
-        long linkedListLastIndexOfCheckTime = LinkedListFill.lastIndexOfCheck(elementsArray);
-        long listLastIndexOfCheckTime = ListFill.lastIndexOfCheck(elementsArray);
+        ArrayListFill.lastIndexOfCheck(elementsArray);
+        LinkedListFill.lastIndexOfCheck(elementsArray);
+        ListFill.lastIndexOfCheck(elementsArray);
         System.out.println();
 
-        long arrayListRemoveSingleElementTime = ArrayListFill.removeSingleElement(elementsArray);
-        long collectionRemoveSingleElementTime = CollectionFill.removeSingleElement(elementsArray);
-        long linkedListRemoveSingleElementTime = LinkedListFill.removeSingleElement(elementsArray);
-        long setRemoveSingleElementTime = SetFill.removeSingleElement(elementsArray);
+        ArrayListFill.removeSingleElement(elementsArray);
+        CollectionFill.removeSingleElement(elementsArray);
+        LinkedListFill.removeSingleElement(elementsArray);
+        SetFill.removeSingleElement(elementsArray);
         System.out.println();
 
-        long arrayListRemoveSpecificElementTime = ArrayListFill.removeSpecificElement(elementsArray);
-        long collectionRemoveSpecificElementTime = CollectionFill.removeSpecificElement(elementsArray);
-        long linkedListRemoveSpecificElementTime = LinkedListFill.removeSpecificElement(elementsArray);
-        long listRemoveSpecificElementTime = ListFill.removeSpecificElement(elementsArray);
-        long setRemoveSpecificElementTime = SetFill.removeSpecificElement(elementsArray);
+        ArrayListFill.removeSpecificElement(elementsArray);
+        CollectionFill.removeSpecificElement(elementsArray);
+        LinkedListFill.removeSpecificElement(elementsArray);
+        ListFill.removeSpecificElement(elementsArray);
+        SetFill.removeSpecificElement(elementsArray);
         System.out.println();
 
-        long arrayListReplaceElementTime = ArrayListFill.replaceElement(elementsArray);
-        long linkedListReplaceElementTime = LinkedListFill.replaceElement(elementsArray);
-        long listReplaceElementTime = ListFill.replaceElement(elementsArray);
+        ArrayListFill.replaceElement(elementsArray);
+        LinkedListFill.replaceElement(elementsArray);
+        ListFill.replaceElement(elementsArray);
         System.out.println();
 
-        long arrayListSizeOfTime = ArrayListFill.sizeOf(elementsArray);
-        long collectionSizeOfTime = CollectionFill.sizeOf(elementsArray);
-        long linkedListSizeOfTime = LinkedListFill.sizeOf(elementsArray);
-        long hashMapSizeOfTime = HashMapFill.sizeOf(HashMapFill.doHashMapFill(elementsArray));
-        long hashTableSizeOfTime = HashTableFill.sizeOf(HashTableFill.doHashTableFill(elementsArray));
-        long listSizeOfTime = ListFill.sizeOf(elementsArray);
-        long setSizeOfTime = SetFill.sizeOf(elementsArray);
+        ArrayListFill.sizeOf(elementsArray);
+        CollectionFill.sizeOf(elementsArray);
+        LinkedListFill.sizeOf(elementsArray);
+        HashMapFill.sizeOf(HashMapFill.doHashMapFill(elementsArray));
+        HashTableFill.sizeOf(HashTableFill.doHashTableFill(elementsArray));
+        ListFill.sizeOf(elementsArray);
+        SetFill.sizeOf(elementsArray);
         System.out.println();
 
-        long arrayListToArrayTime = ArrayListFill.toArray(elementsArray);
-        long collectionToArrayTime = CollectionFill.toArray(elementsArray);
-        long linkedListToArrayTime = LinkedListFill.toArray(elementsArray);
-        long listToArrayTime = ListFill.toArray(elementsArray);
-        long setToArrayTime = SetFill.toArray(elementsArray);
+        ArrayListFill.toArray(elementsArray);
+        CollectionFill.toArray(elementsArray);
+        LinkedListFill.toArray(elementsArray);
+        ListFill.toArray(elementsArray);
+        SetFill.toArray(elementsArray);
         System.out.println();
 
-        long arrayListReturnIteratorTime = ArrayListFill.returnIterator(elementsArray);
-        long collectionReturnIteratorTime = CollectionFill.returnIterator(elementsArray);
-        long linkedListReturnIteratorTime = LinkedListFill.returnIterator(elementsArray);
-        long listReturnIteratorTime = ListFill.returnIterator(elementsArray);
-        long setReturnIteratorTime = SetFill.returnIterator(elementsArray);
+        ArrayListFill.returnIterator(elementsArray);
+        CollectionFill.returnIterator(elementsArray);
+        LinkedListFill.returnIterator(elementsArray);
+        ListFill.returnIterator(elementsArray);
+        SetFill.returnIterator(elementsArray);
         System.out.println();
 
-        long arrayListHashCodeTime = ArrayListFill.hashCode(elementsArray);
-        long collectionHashCodeTime = CollectionFill.hashCode(elementsArray);
-        long hashTableHashCodeTime = HashTableFill.hashCode(HashTableFill.doHashTableFill(elementsArray));
-        long linkedListHashCodeTime = LinkedListFill.hashCode(elementsArray);
-        long listHashCodeTime = ListFill.hashCode(elementsArray);
-        long setHashCodeTime = SetFill.hashCode(elementsArray);
+        ArrayListFill.hashCode(elementsArray);
+        CollectionFill.hashCode(elementsArray);
+        HashTableFill.hashCode(HashTableFill.doHashTableFill(elementsArray));
+        LinkedListFill.hashCode(elementsArray);
+        ListFill.hashCode(elementsArray);
+        SetFill.hashCode(elementsArray);
     }
 }
