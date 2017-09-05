@@ -121,7 +121,7 @@ class ArrayListFill {
         myArrayList.remove(1);
         long endTime = System.nanoTime();
         long duration = (endTime - startTime);
-        System.out.println("ArrayList RemoveSingleElement operation time = " + duration);
+        System.out.println("ArrayList RemoveSpecificElement operation time = " + duration);
         return duration;
     }
 
