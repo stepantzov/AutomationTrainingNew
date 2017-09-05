@@ -23,16 +23,19 @@ class ArrayListFill {
 
     static long getMidElement(ArrayList<Integer> myArrayList) {
         if ((myArrayList.size()) % 2 == 0) {
+            int arrayListMidElement1 = myArrayList.size() / 2;
             long startTime = System.nanoTime();
-            int arrayListMidElement1 = myArrayList.get(myArrayList.size() / 2);
-            int arrayListMidElement2 = myArrayList.get((myArrayList.size() / 2) - 1);
+            int arrayListMidElement2 = (myArrayList.size() / 2) - 1;
+            myArrayList.get(arrayListMidElement1);
+            myArrayList.get(arrayListMidElement2);
             long endTime = System.nanoTime();
             long duration = (endTime - startTime);
             System.out.println("ArrayList GetMidElement operation time = " + duration);
             return duration;
         } else {
+            int arrayListMidElement = (myArrayList.size() / 2) - 1;
             long startTime = System.nanoTime();
-            int arrayListMidElement = myArrayList.get((myArrayList.size() / 2) - 1);
+            myArrayList.get(arrayListMidElement);
             long endTime = System.nanoTime();
             long duration = (endTime - startTime);
             System.out.println("ArrayList GetMidElement operation time = " + duration);
@@ -77,7 +80,6 @@ class ArrayListFill {
         myArrayList.clone();
         long endTime = System.nanoTime();
         long duration = (endTime - startTime);
-        System.out.println(myArrayList);
         System.out.println("ArrayList Clone operation time = " + duration);
         return duration;
     }
