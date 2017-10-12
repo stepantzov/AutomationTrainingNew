@@ -15,7 +15,7 @@ import java.util.Collection;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 
 @RunWith(Parameterized.class)
-class TestBasicCalculatorOperations extends Assert {
+public class TestBasicCalculatorOperations extends Assert {
     BasicCalculatorOperations testBasicCalculatorOperations = new BasicCalculatorOperations();
 
     int operandOne;

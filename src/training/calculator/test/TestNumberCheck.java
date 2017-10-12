@@ -11,7 +11,7 @@ import java.util.Collection;
 
 @RunWith(Parameterized.class)
 
-class TestNumberCheck extends Assert {
+public class TestNumberCheck extends Assert {
     NumberCheck testNumberCheck = new NumberCheck ();
 
     @Parameterized.Parameter()

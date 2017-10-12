@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 import static junit.framework.Assert.assertEquals;
 import static org.junit.jupiter.api.DynamicTest.dynamicTest;
 
-class TestBasicCalculatorOperationsTestFactory {
+public class TestBasicCalculatorOperationsTestFactory {
 
     @TestFactory
     Stream<DynamicTest> testMultiplyException() {
