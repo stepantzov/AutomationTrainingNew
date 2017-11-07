@@ -1,4 +1,4 @@
-package training.calculator.test;
+package test;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
@@ -6,7 +6,7 @@ import org.junit.runner.notification.Failure;
 
 public class TestRunner {
     public static void main(String[] args) {
-        Result result = JUnitCore.runClasses(JunitTestSuite.class);
+        Result result = JUnitCore.runClasses(BasicCalculatorOperationsTest.class);
         for (Failure failure : result.getFailures()) {
             System.out.println(failure.toString());
         }
