@@ -23,6 +23,7 @@ public class NumberCheckTest extends Assert {
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         Object[][] data = new Object[][]{{2, 1}, {5, 6}, {7, 8}, {199, 200}, {197, 20}, {193, 300}};
+
         return Arrays.asList(data);
     }
 

@@ -1,17 +1,14 @@
-/**
- * Created by Ivan_Stepantsov on 7/3/2017.
- */
-
 package training.numbers_compare;
+
 import java.util.Scanner;
 
 /**
  * This class compares two numbers
  * with his name added
- * */
+ */
 
 public class TwoNumbersCompare {
-    public TwoNumbersCompare(double numberOne, double numberTwo){
+    public TwoNumbersCompare(double numberOne, double numberTwo) {
         if (numberOne == numberTwo) {
             System.out.println("Your numbers are equal.");
         } else if (numberOne > numberTwo) {
@@ -31,7 +28,7 @@ public class TwoNumbersCompare {
         if ((numberOne % 1 != 0) || (numberTwo % 1 != 0)) {
             throw new IllegalArgumentException("You entered not a numbers!");
         } else {
-            new TwoNumbersCompare (numberOne, numberTwo);
+            new TwoNumbersCompare(numberOne, numberTwo);
         }
     }
 }
