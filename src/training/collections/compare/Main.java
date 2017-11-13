@@ -7,18 +7,17 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
-
         System.out.println("Please enter the number of elements to add into collection:");
         Scanner elementsQuantityScanner = new Scanner(System.in);
         int elementsQuantity = elementsQuantityScanner.nextInt();
         int elementsArray[] = new int[elementsQuantity];
+
         for (int i = 0; i < elementsArray.length; i++) {
             elementsArray[i] = (int) Math.round((Math.random() * 100));
         }
-        System.out.println("Map structure:\n" + HashMapFill.doHashMapFill(elementsArray));
-        System.out.println("Collection structure:\n" + CollectionFill.doBasicCollectionCreation(elementsArray));
         System.out.println();
 
+        //let's check the middle elements of collections
         CollectionFill.getMidElement(CollectionFill.doBasicCollectionCreation(elementsArray));
         LinkedListFill.getMidElement(LinkedListFill.doLinkedListFill(elementsArray));
         ArrayListFill.getMidElement(ArrayListFill.doArrayListFill(elementsArray));
@@ -28,6 +27,7 @@ public class Main {
         SetFill.getSetMidElement(SetFill.doSetFill(elementsArray));
         System.out.println();
 
+        //let's check adding of multiple elements into collections
         ArrayListFill.addMultipleElements(elementsArray);
         CollectionFill.addMultipleElements(elementsArray);
         LinkedListFill.addMultipleElements(elementsArray);
@@ -35,12 +35,15 @@ public class Main {
         SetFill.addMultipleElements(elementsArray);
         System.out.println();
 
+        //lets check adding of a single element to collections
         ArrayListFill.addSingleElementToPosition(elementsArray);
-        CollectionFill.addSingleElement(elementsArray);
         LinkedListFill.addSingleElementToPosition(elementsArray);
-        SetFill.addSingleElement(elementsArray);
+        ListFill.addSingleElementToPosition(elementsArray);
+        HashTableFill.putValue(HashTableFill.doHashTableFill(elementsArray));
+        HashMapFill.putValue(HashMapFill.doHashMapFill(elementsArray));
         System.out.println();
 
+        //let's check if collection contains specific element
         ArrayListFill.containsCheck(elementsArray);
         CollectionFill.containsCheck(elementsArray);
         HashMapFill.containsCheck(HashMapFill.doHashMapFill(elementsArray));
@@ -50,6 +53,7 @@ public class Main {
         SetFill.containsCheck(elementsArray);
         System.out.println();
 
+        //let's check time for clearing the collection
         ArrayListFill.clear(elementsArray);
         CollectionFill.clear(elementsArray);
         HashMapFill.clear(HashMapFill.doHashMapFill(elementsArray));
@@ -59,6 +63,7 @@ public class Main {
         SetFill.clear(elementsArray);
         System.out.println();
 
+        //let's check clone operation time
         ArrayListFill.clone(elementsArray);
         HashMapFill.clone(HashMapFill.doHashMapFill(elementsArray));
         HashTableFill.clone(HashTableFill.doHashTableFill(elementsArray));

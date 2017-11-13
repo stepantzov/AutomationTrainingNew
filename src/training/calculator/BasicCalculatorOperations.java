@@ -3,32 +3,35 @@ package training.calculator;
 /**
  * Created by Ivan_Stepantsov on 7/16/2017.
  */
-class BasicCalculatorOperations {
+public class BasicCalculatorOperations {
     int result;
     int operandOne;
     int operandTwo;
 
-    int addOperation(int operandOne, int operandTwo) {
+    public BasicCalculatorOperations() {} //to ease test process;
+
+    public static int addOperation(int operandOne, int operandTwo) {
         return (operandOne + operandTwo);
     }
 
-    int subtractionOperation(int operandOne, int operandTwo) {
+    public static int subtractionOperation(int operandOne, int operandTwo) {
         return (operandOne - operandTwo);
     }
 
-    int multiplicationOperation(int operandOne, int operandTwo) {
+    public static int multiplicationOperation(int operandOne, int operandTwo) {
         return (operandOne * operandTwo);
     }
 
-    int divisionOperation(int operandOne, int operandTwo) {
+    public static int divisionOperation(int operandOne, int operandTwo) {
         return (operandOne / operandTwo);
     }
 
-    int reminderOperation(int operandOne, int operandTwo) {
+    public static int reminderOperation(int operandOne, int operandTwo) {
         return (operandOne % operandTwo);
     }
 
-    BasicCalculatorOperations(String operationSelect) {
+
+    public BasicCalculatorOperations(String operationSelect) {
         operandOne = CalculatorMain.getSelectedValue("first");
         operandTwo = CalculatorMain.getSelectedValue("second");
 

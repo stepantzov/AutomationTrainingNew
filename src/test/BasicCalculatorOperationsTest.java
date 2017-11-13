@@ -30,6 +30,7 @@ public class BasicCalculatorOperationsTest extends Assert {
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         Object[][] data = new Object[][]{{1, 2, 3}};
+
         return Arrays.asList(data);
     }
 
@@ -45,13 +46,12 @@ public class BasicCalculatorOperationsTest extends Assert {
         operandTwo = 1;
     }
 
-    // category marker
     public interface ExceptionTest {
+        // category marker
     }
 
     @Test
     public void testAddOperationTrue() {
-
         System.out.println("testAddOperationTrue has started");
 
         int result = testBasicCalculatorOperations.addOperation(operandOne, operandTwo);

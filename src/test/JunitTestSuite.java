@@ -8,7 +8,7 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({BasicCalculatorOperationsTest.class, NumberCheckTest.class})
 
 public class JunitTestSuite {
-//will run two above test suits:
-// BasicCalculatorOperationsTest.class,
-// NumberCheckTest.class
+/*will run two above test suits:
+BasicCalculatorOperationsTest.class,
+NumberCheckTest.class*/
 }
